@@ -40,9 +40,15 @@ public class WordManager {
 			{
 				WordCRUD.listAll();
 			}
+			
 			else if(menu==4)
 			{
 				WordCRUD.addWord();
+			}
+			
+			else if(menu==5)
+			{
+				WordCRUD.updateItem();
 			}
 		}
 	}
