@@ -50,6 +50,10 @@ public class WordManager {
 			{
 				WordCRUD.updateItem();
 			}
+			else if(menu==6)
+			{
+				WordCRUD.deleteItem();
+			}
 		}
 	}
 }
