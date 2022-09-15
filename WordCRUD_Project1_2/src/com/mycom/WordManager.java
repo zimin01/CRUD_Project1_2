@@ -42,6 +42,10 @@ public class WordManager {
 			{
 				WordCRUD.listAll();
 			}
+			else if(menu==2)
+			{
+				WordCRUD.searchLevel();
+			}
 			
 			else if(menu==4)
 			{
