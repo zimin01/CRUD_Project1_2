@@ -29,6 +29,8 @@ public class WordManager {
 	}
 	
 	public void start() {
+		
+		WordCRUD.loadFile(); //파일 읽어오기 
 		while(true) {
 			int menu = selectMenu();
 			if(menu==0)

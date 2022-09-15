@@ -1,5 +1,9 @@
 package com.mycom;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,6 +11,8 @@ public class WordCRUD implements ICRUD{
 
 	ArrayList<Word> list;
 	Scanner s;
+	
+	final String fname = "Dictionary.txt";
 	
 	
 	WordCRUD(Scanner s){
@@ -113,5 +119,32 @@ public class WordCRUD implements ICRUD{
 		}
 		else
 			System.out.println("취소되었습니다. ");
+	}
+	
+	public void loadFile() {
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(fname));
+			String line;
+			int count=0;
+			while(true)
+			{
+				line = br.readLine();
+				if(line==null) break;
+				
+				String data[]=line.split("\\|"); 
+				int level = Integer.parseInt(data[0]);
+				String word = data[1];
+				String meaning = data[2];
+				list.add(new Word(0,level,word,meaning));
+				count++;
+				
+			}
+			br.close();
+			System.out.println("==> "+count+"개 로딩 완료!!!");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
