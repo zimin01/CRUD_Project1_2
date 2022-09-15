@@ -19,4 +19,13 @@
 2|eye-opener|눈이 휘둥그레질 만한 사건, 놀라운 경험 
 1|graceful|우아한 
 2|seagull|갈매기 
-1| kiwi|키위
+1|tightly|단단한 
+2|webbed|물갈퀴가 있는 
+1|thoughtlessly|생각 없이 
+1|discard|버리다 
+1|unfortunate|불운한 
+1|branch|나뭇가지 
+1|trim|다듬다 
+3|crouch|쪼그리고 앉다 
+2|proclaim|공언하다, 선포하다 
+1| apple|사과

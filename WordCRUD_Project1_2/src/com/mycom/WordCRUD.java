@@ -181,7 +181,6 @@ public class WordCRUD implements ICRUD{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 
 	public void searchLevel() {
@@ -189,7 +188,6 @@ public class WordCRUD implements ICRUD{
 		System.out.print("==> 원하는 레벨은? (1~3)");
 		int level = s.nextInt();
 		listAll(level); //해당하는 레벨단어 출력 
-		
 	}
 	
 	public void searchWord()
