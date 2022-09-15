@@ -19,4 +19,4 @@
 2|eye-opener|눈이 휘둥그레질 만한 사건, 놀라운 경험 
 1|graceful|우아한 
 2|seagull|갈매기 
-1| kiwi|키위
+1| apple|사과
