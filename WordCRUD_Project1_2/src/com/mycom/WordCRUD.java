@@ -191,4 +191,13 @@ public class WordCRUD implements ICRUD{
 		listAll(level); //해당하는 레벨단어 출력 
 		
 	}
+	
+	public void searchWord()
+	{
+		System.out.print("=> 원하는 단어는? ");
+		String keyword = s.next();
+		listAll(keyword);
+	}
+
+	
 }
